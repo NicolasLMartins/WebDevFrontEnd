@@ -1,0 +1,56 @@
+<script src="">
+  function validar() {
+    var dia = parseInt(document.getElementById("dia").value);
+    var mes = parseInt(document.getElementById("mes").value);
+    var ano = parseInt(document.getElementById("ano").value);
+    // var dia = formulario.dia;
+    const mesesTrinta = [4, 6, 9, 11, 04, 06, 09];
+    const mesesTrintaEUm = [1, 3, 5, 7, 8, 10, 12, 01, 03, 05, 07, 08]
+    const meses = mesesTrinta.concat(mesesTrintaEUm);
+
+    if(!meses.includes(mes.value)) {
+      alert("Mês inválido!");
+      mes.focus();
+    }
+
+    if(dia.value == "") {
+      alert("Dia não informado!");
+      dia.focus();      
+    }
+    
+    //mês inexistente e numero de dias incorreto
+    if(!meses.includes(mes.value)){
+      alert("Mês invalido!");
+      mes.focus();
+    } else if(mes.value ) {
+
+    }
+  }
+</script>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <title>Colégio Concórdia | Calculadora da idade</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+  
+  
+  <div class="attribution">
+    Desenvolvimento Web <a href="https://concordiasl.com.br/web/?ref=challenge" target="_blank">Colégio Luterano Concórdia</a>. 
+    Criado por <a href="#">Seu dia aqui</a>.
+  </div>
+</body>
+</html>
