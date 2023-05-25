@@ -8,23 +8,35 @@
     const mesesTrintaEUm = [1, 3, 5, 7, 8, 10, 12, 01, 03, 05, 07, 08]
     const meses = mesesTrinta.concat(mesesTrintaEUm);
 
-    if(!meses.includes(mes.value)) {
-      alert("Mês inválido!");
-      mes.focus();
-    }
-
-    if(dia.value == "") {
+    //validações campos vazios
+    if(dia.value == "" ) {
       alert("Dia não informado!");
       dia.focus();      
+    } else if(mes.value == "") {
+      alert("Mês não informado!");
+      mes.focus();
+    } else if(ano.value == "") {
+      alert("Ano não informado!");
+      ano.focus();
     }
     
-    //mês inexistente e numero de dias incorreto
-    if(!meses.includes(mes.value)){
+    //validações ano, mes e dia
+    let anoValida = new Date;
+
+    if (ano.value > anoValida.getFullYear()) {
+      alert("Ano no futuro!");
+      ano.focus();
+    } else if(!meses.includes(mes.value)) {
       alert("Mês invalido!");
       mes.focus();
-    } else if(mes.value ) {
-
+    } else if(dia.value < 1 || (dia.value > 31 && mesesTrintaEUm.includes(mes.value))) {
+      alert("Dia inválido!");
+      dia.focus();
+    } else if(dia.value > 30 && mesesTrinta.includes(mes.value)) {
+      alert("Dia inválido!");
+      dia.focus();
     }
+
   }
 </script>
 
@@ -32,25 +44,22 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <title>Colégio Concórdia | Calculadora da idade</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concórdia São Leo | Calculadora de Idade</title>
+  <link rel="stylesheet" href="C:/Users/Técnico/Desktop/Nicolas/WebDevFrontEnd/age-calculator-app-main/css/style.css">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
 
+  <h1>The quick brown foz jumps over the lazy dog</h1>
+  <h2>The quick brown foz jumps over the lazy dog</h2>
+  <h3>The quick brown foz jumps over the lazy dog</h3>
+  <h4>The quick brown foz jumps over the lazy dog</h4>
+  <p>The quick brown foz jumps over the lazy dog</p>
   
-  
-  <div class="attribution">
-    Desenvolvimento Web <a href="https://concordiasl.com.br/web/?ref=challenge" target="_blank">Colégio Luterano Concórdia</a>. 
-    Criado por <a href="#">Seu dia aqui</a>.
-  </div>
 </body>
 </html>

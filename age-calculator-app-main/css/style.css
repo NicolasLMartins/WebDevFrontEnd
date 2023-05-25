@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Poppins;
+
+    src: url("C:/Users/Técnico/Desktop/Nicolas/WebDevFrontEnd/age-calculator-app-main/assets/fonts/Poppins-Bold.ttf") format("truetype");
+    font-weight: bold;
+
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("C:/Users/Técnico/Desktop/Nicolas/WebDevFrontEnd/age-calculator-app-main/assets/fonts/Poppins-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("C:/Users/Técnico/Desktop/Nicolas/WebDevFrontEnd/age-calculator-app-main/assets/fonts/Poppins-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("C:/Users/Técnico/Desktop/Nicolas/WebDevFrontEnd/age-calculator-app-main/assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("C:/Users/Técnico/Desktop/Nicolas/WebDevFrontEnd/age-calculator-app-main/assets/fonts/Poppins-Italic.ttf") format("truetype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("C:/Users/Técnico/Desktop/Nicolas/WebDevFrontEnd/age-calculator-app-main/assets/fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-family: Poppins;
+    font-weight: ;
+    font-style: italic;
+}
